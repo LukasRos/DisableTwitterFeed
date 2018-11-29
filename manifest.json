@@ -1,0 +1,14 @@
+{
+    "manifest_version": 2,
+    "name": "Disable Twitter Feed",
+    "version": "1.0", 
+    "description": "Removes the timeline on Twitter's homepage.",
+    "content_scripts": [
+      {
+        "matches": ["*://*.twitter.com/*"],
+        "css": ["disablefeed.css"],
+        "run_at": "document_start"    
+      }
+    ]
+  
+  }
