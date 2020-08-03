@@ -6,7 +6,7 @@
     "content_scripts": [
       {
         "matches": ["*://*.twitter.com/*"],
-        "css": ["disablefeed.css"],
+        "js": ["disablefeed.js"],
         "run_at": "document_start"    
       }
     ]
