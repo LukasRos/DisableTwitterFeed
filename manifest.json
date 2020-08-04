@@ -4,11 +4,14 @@
     "version": "1.0", 
     "description": "Removes the timeline on Twitter's homepage.",
     "content_scripts": [
-      {
-        "matches": ["*://*.twitter.com/*"],
-        "js": ["disablefeed.js"],
-        "run_at": "document_start"    
-      }
-    ]
-  
-  }
+        {
+            "matches": ["*://*.twitter.com/*"],
+            "js": ["disablefeed.js"],
+            "run_at": "document_start"
+        }
+    ],
+    "icons" : {
+        "48" : "icon.png",
+        "96" : "icon@2x.png"
+    }
+}

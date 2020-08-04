@@ -5,7 +5,7 @@ const observer = new MutationObserver(mutations => {
             if (target.nodeType === 1 && target.tagName == "DIV") {
                 const section = target.querySelector('section[role="region"]');
                 if (typeof(section) !== "undefined" && section !== null)
-                    section.innerHTML = "<p style=\"font-family:sans-serif; text-align:center;\">Don't get distracted!</p>";
+                    section.innerHTML = "<p>&nbsp;</p>";
             }
         }        
     });
